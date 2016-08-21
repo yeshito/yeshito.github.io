@@ -1,0 +1,32 @@
+.parallax-container {
+  height: 500px;
+}
+/*#landing-parallax-container{
+  height: 700px
+}*/
+h1 {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+h2 {
+  color: white;
+  text-align: center;
+  position: relative;
+}
+img {
+  width: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 40px;
+    top: 40%;
+    width: auto;
+}
+li a {
+    display: block;
+    width: 60px;
+}
