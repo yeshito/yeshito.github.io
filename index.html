@@ -12,12 +12,14 @@
     <link rel="stylesheet" type="text/css" href="styles/style.css">
   </head>
   <body>
-        <ul>
-          <li><a name="landingPar">HOME</a></li>
-          <li><a name="projectsPar">PROJECTS</a></li>
-          <li><a name="skillsPar">SKILLS</a></li>
-          <li><a name="contactPar">CONTACT</a></li>
-        </ul>
+    <div id="navContainer">
+      <ul>
+        <li><a name="landingPar">HOME</a></li>
+        <li><a name="projectsPar">PROJECTS</a></li>
+        <li><a name="skillsPar">SKILLS</a></li>
+        <li><a name="contactPar">CONTACT</a></li>
+      </ul>
+    </div>
     <div id="landingPar" class="parallax landingFlexContainer">
         <!-- <div class="landingHeader"> -->
           <h1 class="line-1 anim-typewriter">yesheWingerd.</h1>
@@ -33,8 +35,8 @@
       <h2>PROJECTS</h2>
     </div>
     <div class="flexContainer">
-          <a class="flexProject fadeInUp" href="https://github.com/yeshito/" target="_blank">
-            <span class="text">Music Brainzstorm</span>
+          <a class="flexProject fadeInUp" href="https://www.youtube.com/watch?v=u1e1artB15Q" target="_blank">
+            <span class="text">Musicality</span>
             <img src="styles/images/musicbrainzstorm screenshot.png">
           </a>
           <a class="flexProject fadeInUp" href="https://github.com/l4nk332/Code-Guild" target="_blank">
@@ -153,7 +155,10 @@
     </div>
     <div id="footerContainer">
       <a class="email" href="mailto:yeshito@gmail.com">Email Me</a>
-      <p class="copyright">© Yeshe Wingerd 2016</p>
+      <div id="copyright">
+        <p>Exclusively handcrafted with html, css, and javascript</p>
+        <p class="copyright">© Yeshe Wingerd 2016</p>
+      </div>
     </div>
   </body>
 </html>

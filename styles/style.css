@@ -38,24 +38,26 @@ p {
 img {
   width: 100%;
 }
-
+a {
+  text-decoration: none;
+  color: white;
+}
 /*Navbar*/
-
+#navContainer {
+  margin: 0;
+  position: fixed;
+  top: 40%;
+  z-index: 20;
+}
 ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    position: fixed;
-    left: 15px;
-    top: 40%;
-    width: auto;
-    z-index: 20;
 }
 li {
     font-family: "Vesper Libre", serif;
     color: white;
     display: block;
     width: 60px;
+    cursor: pointer;
 }
 /*End Navbar*/
 
@@ -98,16 +100,6 @@ li {
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
-
-
-/*.landingHeader {
-  margin: 0;
-  height: auto;
-}*/
-/*.headerContainer {
-  display: table;
-  position: absolute;
-}*/
 
 .parallax {
   height: 500px;
@@ -241,21 +233,23 @@ li {
 }
 /*Education Section*/
 #contactPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/IMG_2375.jpg");
-  height: 500px;
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/IMG_2369.jpg");
+  height: 850px;
 }
 #footerContainer {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   width: 100%;
+  height: 500px;
   align-items: center;
   justify-content: center;
   background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
   background-size: cover;
-  height: 200px;
 }
 .email {
-  color: #31263E
+  text-decoration: none;
+  color: #31263E;
 }
-.copyright {
+#copyright {
+  text-align: center;
 }
