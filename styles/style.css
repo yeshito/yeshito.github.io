@@ -1,32 +1,261 @@
-.parallax-container {
-  height: 500px;
+body, html {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
-/*#landing-parallax-container{
-  height: 700px
-}*/
 h1 {
+  font-family: "Vesper Libre", serif;
   color: white;
+  font-size: 80px;
   text-align: center;
-  position: relative;
+  vertical-align: middle;
+  margin: 0;
 }
 h2 {
+  font-family: "Vesper Libre", serif;
   color: white;
+  z-index: 12;
+  font-size: 60px;
+}
+h3 {
+  font-family: "Vesper Libre", serif;
+  color: black;
   text-align: center;
-  position: relative;
+}
+h4 {
+  font-family: "Vesper Libre", serif;
+  color: black;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+p {
+  font-family: "Vesper Libre", serif;
+  font-size: 20px;
+  margin: 70px;
 }
 img {
   width: 100%;
 }
+
+/*Navbar*/
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     position: fixed;
-    right: 40px;
+    left: 15px;
     top: 40%;
     width: auto;
+    z-index: 20;
 }
-li a {
+li {
+    font-family: "Vesper Libre", serif;
+    color: white;
     display: block;
     width: 60px;
+}
+/*End Navbar*/
+
+/*Landing Page*/
+#landingPar {
+  height: 100%;
+  width: 100%;
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-surf.jpg");
+}
+.landingFlexContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.line-1{
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: "Vesper Libre", serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/*.landingHeader {
+  margin: 0;
+  height: auto;
+}*/
+/*.headerContainer {
+  display: table;
+  position: absolute;
+}*/
+
+.parallax {
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flexContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
+  background-size: cover;
+}
+/* End Landing Page */
+
+/* Projects section */
+
+.flexProject {
+    position: relative;
+    padding: 0;
+    width: 500px;
+    margin: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.flexProject:hover {
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.text {
+    position: absolute;
+    top: 0;
+    font-family: "Vesper Libre", serif;
+    color: #31263E;
+    background-color:rgba(255,255,255,0.8);
+    width: 500px;
+    height: 313px;
+    line-height: 313px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    font-size: 40px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.text:hover {
+    opacity: 1;
+}
+#projectsPar {
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-extruction.jpg");
+}
+#codeGuildHeader {
+  padding-top: 10px;
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp.in-view {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+
+/* End Projects Section */
+
+/* Skills Section */
+#skillsPar {
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-consistent_rain.jpg");
+}
+.skillsCard {
+  width: 250px;
+  height: 350px;
+  margin: 20px 20px 75px 20px;
+}
+.skillsType {
+  width: 250px;
+  height: 100px;
+  display: table;
+}
+.skillsContainer {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  vertical-align: middle;
+  border: gray 1px solid;
+}
+.skillsIcon {
+  width: 100px;
+  margin: 10px;
+}
+#flaskIcon {
+  width: 95px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*Education Section*/
+#contactPar {
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/IMG_2375.jpg");
+  height: 500px;
+}
+#footerContainer {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
+  background-size: cover;
+  height: 200px;
+}
+.email {
+  color: #31263E
+}
+.copyright {
 }
