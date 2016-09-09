@@ -65,7 +65,7 @@ li {
 #landingPar {
   height: 100%;
   width: 100%;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-surf.jpg");
+  background-image: url("./images/woods-surf.jpg");
 }
 .landingFlexContainer {
   display: flex;
@@ -118,7 +118,7 @@ li {
   min-height: 300px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
+  background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
 }
 /* End Landing Page */
@@ -158,7 +158,7 @@ li {
     opacity: 1;
 }
 #projectsPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-extruction.jpg");
+  background-image: url("./images/woods-extruction.jpg");
 }
 #codeGuildHeader {
   padding-top: 10px;
@@ -201,7 +201,7 @@ li {
 
 /* Skills Section */
 #skillsPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-consistent_rain.jpg");
+  background-image: url("./images/woods-consistent_rain.jpg");
 }
 .skillsCard {
   width: 250px;
@@ -233,7 +233,7 @@ li {
 }
 /*Education Section*/
 #contactPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/IMG_2369.jpg");
+  background-image: url("./images/IMG_2369.jpg");
   height: 850px;
 }
 #footerContainer {
@@ -243,7 +243,7 @@ li {
   height: 450px;
   align-items: center;
   justify-content: center;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
+  background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
 }
 .email {
