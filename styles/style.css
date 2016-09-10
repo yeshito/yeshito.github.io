@@ -1,4 +1,4 @@
-body, html {
+  body, html {
     width: 100%;
     height: 100%;
     padding: 0;
@@ -29,11 +29,6 @@ h4 {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
-}
-div p {
-  font-family: "Vesper Libre", serif;
-  font-size: 20px;
-  margin: 125px;
 }
 img {
   width: 100%;
@@ -122,6 +117,11 @@ li {
   padding-bottom: 20px;
   background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
+}
+.flexContainer p {
+  font-family: "Vesper Libre", serif;
+  font-size: 20px;
+  margin: 125px;
 }
 /* End Landing Page */
 
@@ -238,27 +238,33 @@ li {
   margin-right: 10px;
 }
 /*Contact Section*/
+.contactIcon {
+  width: 80px;
+  margin: 20px;
+}
+
 #contactPar {
   background-image: url("./images/IMG_2369.jpg");
   height: 600px;
 }
 #footerContainer {
-  display: flex;
-  flex-flow: column nowrap;
   width: 100%;
-  height: 450px;
-  align-items: center;
-  justify-content: center;
+  height: 300px;
   background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
+  padding-top: 50px;
 }
-.email {
-  text-decoration: none;
-  color: #31263E;
-  font-size: 25px;
+#linksContainer {
+  width: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
 }
-#copyright {
+.copyright {
   text-align: center;
+  margin-top: 50px;
 }
 .small {
   font-size: 12px;
