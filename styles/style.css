@@ -66,7 +66,7 @@ li {
 #landingPar {
   height: 100%;
   width: 100%;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-surf.jpg");
+  background-image: url("./images/woods-surf.jpg");
 }
 .landingFlexContainer {
   display: flex;
@@ -120,7 +120,7 @@ li {
   min-height: 300px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
+  background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
 }
 /* End Landing Page */
@@ -161,7 +161,7 @@ li {
     opacity: 1;
 }
 #projectsPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-extruction.jpg");
+  background-image: url("./images/woods-extruction.jpg");
 }
 @-webkit-keyframes fadeInUp {
   from {
@@ -201,7 +201,7 @@ li {
 
 /* Skills Section */
 #skillsPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-consistent_rain.jpg");
+  background-image: url("./images/woods-consistent_rain.jpg");
 }
 .skillsCard {
   width: 250px;
@@ -224,7 +224,7 @@ li {
   align-items: center;
   vertical-align: middle;
   border: black 3px solid;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/triangular/triangular_@2X.png");
+  background-image: url("./images/triangular/triangular_@2X.png");
   background-size: cover;
   border-radius: 25px;
 }
@@ -239,8 +239,8 @@ li {
 }
 /*Contact Section*/
 #contactPar {
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/IMG_2369.jpg");
-  height: 850px;
+  background-image: url("./images/IMG_2369.jpg");
+  height: 600px;
 }
 #footerContainer {
   display: flex;
@@ -249,7 +249,7 @@ li {
   height: 450px;
   align-items: center;
   justify-content: center;
-  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
+  background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
 }
 .email {
