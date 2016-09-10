@@ -1,6 +1,6 @@
 body, html {
-    height: 100%;
     width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
@@ -30,10 +30,10 @@ h4 {
   text-align: center;
   vertical-align: middle;
 }
-p {
+div p {
   font-family: "Vesper Libre", serif;
   font-size: 20px;
-  margin: 70px;
+  margin: 125px;
 }
 img {
   width: 100%;
@@ -43,14 +43,15 @@ a {
   color: white;
 }
 /*Navbar*/
-#navContainer {
-  margin: 0;
-  position: fixed;
-  top: 40%;
-  z-index: 20;
-}
 ul {
     list-style-type: none;
+    margin: 0;
+    position: fixed;
+    width: 130px;
+    height: 150px;
+    top: 40%;
+    left: -20px;
+    z-index: 20;
 }
 li {
     font-family: "Vesper Libre", serif;
@@ -86,8 +87,9 @@ li {
     vertical-align: middle;
     margin: 0;
 }
+/*End Landing Page*/
 
-/* Animation */
+/* Typewriter Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s 1 normal both,
              blinkTextCursor 500ms steps(44) infinite normal;
@@ -129,8 +131,9 @@ li {
     position: relative;
     padding: 0;
     width: 500px;
-    margin: 50px;
+    margin: 40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    visibility: hidden;
 }
 .flexProject:hover {
   transition: 0.3s;
@@ -159,9 +162,6 @@ li {
 }
 #projectsPar {
   background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/woods-extruction.jpg");
-}
-#codeGuildHeader {
-  padding-top: 10px;
 }
 @-webkit-keyframes fadeInUp {
   from {
@@ -206,7 +206,10 @@ li {
 .skillsCard {
   width: 250px;
   height: 350px;
-  margin: 20px 20px 75px 20px;
+  margin: 20px 70px 72px 50px;
+}
+#leftCard {
+  margin-left: 60px;
 }
 .skillsType {
   width: 250px;
@@ -220,7 +223,10 @@ li {
   flex-flow: row wrap;
   align-items: center;
   vertical-align: middle;
-  border: gray 1px solid;
+  border: black 3px solid;
+  background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/triangular/triangular_@2X.png");
+  background-size: cover;
+  border-radius: 25px;
 }
 .skillsIcon {
   width: 100px;
@@ -231,16 +237,16 @@ li {
   margin-left: 10px;
   margin-right: 10px;
 }
-/*Education Section*/
+/*Contact Section*/
 #contactPar {
   background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/IMG_2369.jpg");
   height: 850px;
 }
 #footerContainer {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   width: 100%;
-  height: 500px;
+  height: 450px;
   align-items: center;
   justify-content: center;
   background-image: url("/Users/yeshewingerd/Galvanize/personal_webpage2/styles/images/shattered/shattered_@2X.png");
@@ -249,7 +255,11 @@ li {
 .email {
   text-decoration: none;
   color: #31263E;
+  font-size: 25px;
 }
 #copyright {
   text-align: center;
+}
+.small {
+  font-size: 12px;
 }
