@@ -1,12 +1,12 @@
-body, html {
-    height: 100%;
+  body, html {
     width: 100%;
+    height: 100%;
     padding: 0;
     margin: 0;
 }
 h1 {
   font-family: "Vesper Libre", serif;
-  color: white;
+  color: #F7F5FB;
   font-size: 80px;
   text-align: center;
   vertical-align: middle;
@@ -30,11 +30,6 @@ h4 {
   text-align: center;
   vertical-align: middle;
 }
-p {
-  font-family: "Vesper Libre", serif;
-  font-size: 20px;
-  margin: 70px;
-}
 img {
   width: 100%;
 }
@@ -43,18 +38,18 @@ a {
   color: white;
 }
 /*Navbar*/
-#navContainer {
-  margin: 0;
-  position: fixed;
-  top: 40%;
-  z-index: 20;
-}
 ul {
     list-style-type: none;
+    margin: 0;
+    position: fixed;
+    width: 130px;
+    height: 150px;
+    top: 40%;
+    left: -20px;
+    z-index: 20;
 }
 li {
     font-family: "Vesper Libre", serif;
-    color: white;
     display: block;
     width: 60px;
     cursor: pointer;
@@ -65,7 +60,7 @@ li {
 #landingPar {
   height: 100%;
   width: 100%;
-  background-image: url("images/woods-surf.jpg");
+  background-image: url("./images/woods-surf.jpg");
 }
 .landingFlexContainer {
   display: flex;
@@ -74,6 +69,9 @@ li {
   justify-content: center;
   align-items: center;
 }
+/*End Landing Page*/
+
+/* Typewriter Animation */
 .line-1{
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
@@ -86,21 +84,20 @@ li {
     vertical-align: middle;
     margin: 0;
 }
-
-/* Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 2s steps(25) 1s 1 normal both,
+             blinkTextCursor 500ms steps(25) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
+  from{width: 0%;}
+  to{width: 100%;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
 
+/*End Typewriter Animation*/
 .parallax {
   height: 500px;
   width: 100%;
@@ -118,8 +115,13 @@ li {
   min-height: 300px;
   padding-top: 20px;
   padding-bottom: 20px;
-  background-image: url("images/shattered/shattered_@2X.png");
+  background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
+}
+.flexContainer p {
+  font-family: "Vesper Libre", serif;
+  font-size: 20px;
+  margin: 125px;
 }
 /* End Landing Page */
 
@@ -129,8 +131,9 @@ li {
     position: relative;
     padding: 0;
     width: 500px;
-    margin: 50px;
+    margin: 40px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    visibility: hidden;
 }
 .flexProject:hover {
   transition: 0.3s;
@@ -158,10 +161,7 @@ li {
     opacity: 1;
 }
 #projectsPar {
-  background-image: url("images/woods-extruction.jpg");
-}
-#codeGuildHeader {
-  padding-top: 10px;
+  background-image: url("./images/woods-extruction.jpg");
 }
 @-webkit-keyframes fadeInUp {
   from {
@@ -201,12 +201,15 @@ li {
 
 /* Skills Section */
 #skillsPar {
-  background-image: url("images/woods-consistent_rain.jpg");
+  background-image: url("./images/woods-consistent_rain.jpg");
 }
 .skillsCard {
   width: 250px;
   height: 350px;
-  margin: 20px 20px 75px 20px;
+  margin: 20px 70px 72px 50px;
+}
+#leftCard {
+  margin-left: 60px;
 }
 .skillsType {
   width: 250px;
@@ -220,7 +223,10 @@ li {
   flex-flow: row wrap;
   align-items: center;
   vertical-align: middle;
-  border: gray 1px solid;
+  border: black 3px solid;
+  background-image: url("./images/triangular/triangular_@2X.png");
+  background-size: cover;
+  border-radius: 25px;
 }
 .skillsIcon {
   width: 100px;
@@ -231,26 +237,35 @@ li {
   margin-left: 10px;
   margin-right: 10px;
 }
-/*Education Section*/
+/*Contact Section*/
+.contactIcon {
+  width: 80px;
+  margin: 20px;
+}
+
 #contactPar {
-  background-image: url("images/IMG_2369.JPG");
-  height: 850px;
+  background-image: url("./images/IMG_2369.jpg");
+  height: 600px;
 }
 #footerContainer {
-  display: flex;
-  flex-flow: column nowrap;
   width: 100%;
-  height: 450px;
+  height: 300px;
+  background-image: url("./images/shattered/shattered_@2X.png");
+  background-size: cover;
+  padding-top: 50px;
+}
+#linksContainer {
+  width: 400px;
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  background-image: url("images/shattered/shattered_@2X.png");
-  background-size: cover;
+  margin:auto;
 }
-.email {
-  text-decoration: none;
-  color: #31263E;
-  font-size: 25px;
-}
-#copyright {
+.copyright {
   text-align: center;
+  margin-top: 50px;
+}
+.small {
+  font-size: 12px;
 }
