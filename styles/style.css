@@ -6,7 +6,7 @@
 }
 h1 {
   font-family: "Vesper Libre", serif;
-  color: white;
+  color: #F7F5FB;
   font-size: 80px;
   text-align: center;
   vertical-align: middle;
@@ -50,7 +50,6 @@ ul {
 }
 li {
     font-family: "Vesper Libre", serif;
-    color: white;
     display: block;
     width: 60px;
     cursor: pointer;
@@ -70,6 +69,9 @@ li {
   justify-content: center;
   align-items: center;
 }
+/*End Landing Page*/
+
+/* Typewriter Animation */
 .line-1{
     border-right: 2px solid rgba(255,255,255,.75);
     white-space: nowrap;
@@ -82,22 +84,20 @@ li {
     vertical-align: middle;
     margin: 0;
 }
-/*End Landing Page*/
-
-/* Typewriter Animation */
 .anim-typewriter{
-  animation: typewriter 4s steps(44) 1s 1 normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriter 2s steps(25) 1s 1 normal both,
+             blinkTextCursor 500ms steps(25) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
+  from{width: 0%;}
+  to{width: 100%;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
   to{border-right-color: transparent;}
 }
 
+/*End Typewriter Animation*/
 .parallax {
   height: 500px;
   width: 100%;
