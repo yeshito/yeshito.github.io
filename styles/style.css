@@ -274,3 +274,6 @@ li {
 .small {
   font-size: 14px;
 }
+.no-shadow {
+  text-shadow: none;
+}
