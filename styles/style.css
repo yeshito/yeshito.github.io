@@ -11,17 +11,29 @@ h1 {
   text-align: center;
   vertical-align: middle;
   margin: 0;
+<<<<<<< HEAD
+=======
+  text-shadow: 2px 2px 3px black;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
 h2 {
   font-family: "Vesper Libre", serif;
   color: white;
   z-index: 12;
   font-size: 60px;
+<<<<<<< HEAD
+=======
+  text-shadow: 2px 2px 3px black;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
 h3 {
   font-family: "Vesper Libre", serif;
   color: black;
   text-align: center;
+<<<<<<< HEAD
+=======
+  text-shadow: 1px 1px 2px gray;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
 h4 {
   font-family: "Vesper Libre", serif;
@@ -47,6 +59,10 @@ ul {
     top: 40%;
     left: -20px;
     z-index: 20;
+<<<<<<< HEAD
+=======
+    text-shadow: 2px 2px 3px black;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
 li {
     font-family: "Vesper Libre", serif;
@@ -90,7 +106,11 @@ li {
 }
 @keyframes typewriter{
   from{width: 0%;}
+<<<<<<< HEAD
   to{width: 100%;}
+=======
+  to{width: 99%;}
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -143,7 +163,12 @@ li {
     position: absolute;
     top: 0;
     font-family: "Vesper Libre", serif;
+<<<<<<< HEAD
     color: #31263E;
+=======
+    color: black;
+    text-shadow: 1px 1px 2px gray;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
     background-color:rgba(255,255,255,0.8);
     width: 500px;
     height: 313px;
@@ -227,6 +252,10 @@ li {
   background-image: url("./images/triangular/triangular_@2X.png");
   background-size: cover;
   border-radius: 25px;
+<<<<<<< HEAD
+=======
+  box-shadow: 2px 5px 5px gray;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
 .skillsIcon {
   width: 100px;
@@ -244,12 +273,20 @@ li {
 }
 
 #contactPar {
+<<<<<<< HEAD
   background-image: url("./images/IMG_2369.jpg");
+=======
+  background-image: url("./images/IMG_2369.JPG");
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
   height: 600px;
 }
 #footerContainer {
   width: 100%;
+<<<<<<< HEAD
   height: 300px;
+=======
+  height: 335px;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
   background-image: url("./images/shattered/shattered_@2X.png");
   background-size: cover;
   padding-top: 50px;
@@ -265,7 +302,14 @@ li {
 .copyright {
   text-align: center;
   margin-top: 50px;
+<<<<<<< HEAD
 }
 .small {
   font-size: 12px;
+=======
+  text-shadow: none;
+}
+.small {
+  font-size: 14px;
+>>>>>>> 70d80eae95180b39e2a9197a7821447ca5abe690
 }
