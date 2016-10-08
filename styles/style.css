@@ -93,8 +93,8 @@ li {
              blinkTextCursor 500ms steps(25) infinite normal;
 }
 @keyframes typewriter{
-  from{width: 0%;}
-  to{width: 99%;}
+  from {width: 0%;}
+  to {width: 99%;}
 }
 @keyframes blinkTextCursor{
   from{border-right-color: rgba(255,255,255,.75);}
@@ -148,6 +148,7 @@ li {
     top: 0;
     font-family: "Vesper Libre", serif;
     color: #31263E;
+    text-shadow: 1px 1px 2px gray;
     background-color:rgba(255,255,255,0.8);
     width: 500px;
     height: 313px;
@@ -231,6 +232,7 @@ li {
   background-image: url("./images/triangular/triangular_@2X.png");
   background-size: cover;
   border-radius: 25px;
+  box-shadow: 2px 5px 5px gray;
   box-shadow: 2px 5px 5px gray;
 }
 .skillsIcon {
