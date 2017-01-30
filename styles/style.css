@@ -1,0 +1,282 @@
+  body, html {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: black;
+}
+h1 {
+  font-family: "Vesper Libre", serif;
+  color: #F7F5FB;
+  font-size: 80px;
+  text-align: center;
+  vertical-align: middle;
+  margin: 0;
+  text-shadow: 2px 2px 3px black;
+}
+h2 {
+  font-family: "Vesper Libre", serif;
+  color: white;
+  z-index: 12;
+  font-size: 60px;
+  text-shadow: 2px 2px 3px black;
+}
+h3 {
+  font-family: "Vesper Libre", serif;
+  color: black;
+  text-align: center;
+  text-shadow: 1px 1px 2px gray;
+}
+h4 {
+  font-family: "Vesper Libre", serif;
+  color: black;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+img {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+/*Navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    position: fixed;
+    width: 130px;
+    height: 150px;
+    top: 40%;
+    left: -20px;
+    z-index: 20;
+    text-shadow: 2px 2px 3px black;
+}
+li {
+    font-family: "Vesper Libre", serif;
+    display: block;
+    width: 60px;
+    cursor: pointer;
+}
+/*End Navbar*/
+
+/*Landing Page*/
+#landingPar {
+  height: 100%;
+  width: 100%;
+  background-image: url("./images/woods-surf.jpg");
+}
+.landingFlexContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+/*End Landing Page*/
+
+/* Typewriter Animation */
+.line-1{
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+    font-family: "Vesper Libre", serif;
+    color: white;
+    font-size: 80px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0;
+}
+.anim-typewriter{
+  animation: typewriter 2s steps(25) 1s 1 normal both,
+             blinkTextCursor 500ms steps(25) infinite normal;
+}
+@keyframes typewriter{
+  from {width: 0%;}
+  to {width: 99%;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+/*End Typewriter Animation*/
+.parallax {
+  height: 500px;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.flexContainer {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 300px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-image: url("./images/shattered/shattered_@2X.png");
+  background-size: cover;
+}
+.flexContainer p {
+  font-family: "Vesper Libre", serif;
+  font-size: 20px;
+  margin: 125px;
+}
+/* End Landing Page */
+
+/* Projects section */
+
+.flexProject {
+    position: relative;
+    padding: 0;
+    width: 500px;
+    margin: 40px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+.flexProject:hover {
+  transition: 0.3s;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.text {
+    position: absolute;
+    top: 0;
+    font-family: "Vesper Libre", serif;
+    color: #31263E;
+    text-shadow: 1px 1px 2px gray;
+    background-color:rgba(255,255,255,0.8);
+    width: 500px;
+    height: 313px;
+    line-height: 313px;
+    text-align: center;
+    z-index: 10;
+    opacity: 0;
+    font-size: 40px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.text:hover {
+    opacity: 1;
+}
+#projectsPar {
+  background-image: url("./images/woods-extruction.jpg");
+}
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+.fadeInUp.in-view {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-timing-function: ease;
+}
+
+
+/* End Projects Section */
+
+/* Skills Section */
+#skillsPar {
+  background-image: url("./images/woods-consistent_rain.jpg");
+}
+.skillsCard {
+  width: 250px;
+  height: 350px;
+  margin: 20px 70px 72px 50px;
+}
+#leftCard {
+  margin-left: 60px;
+}
+.skillsType {
+  width: 250px;
+  height: 100px;
+  display: table;
+}
+.skillsContainer {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  vertical-align: middle;
+  border: black 3px solid;
+  background-image: url("./images/triangular/triangular_@2X.png");
+  background-size: cover;
+  border-radius: 25px;
+  box-shadow: 2px 5px 5px gray;
+  box-shadow: 2px 5px 5px gray;
+}
+.skillsIcon {
+  width: 100px;
+  margin: 10px;
+}
+#flaskIcon {
+  width: 95px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*Contact Section*/
+.contactIcon {
+  width: 80px;
+  margin: 20px;
+}
+
+#contactPar {
+  background-image: url("./images/IMG_2369.JPG");
+  height: 600px;
+}
+#footerContainer {
+  width: 100%;
+  height: 300px;
+  background-image: url("./images/shattered/shattered_@2X.png");
+  background-size: cover;
+  padding-top: 50px;
+}
+#linksContainer {
+  width: 400px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  margin:auto;
+}
+.copyright {
+  text-align: center;
+  margin-top: 50px;
+}
+.small {
+  font-size: 14px;
+}
+.no-shadow {
+  text-shadow: none;
+}
